@@ -28,7 +28,7 @@ export class ListComponent  implements DoCheck{
   }
 
   public deleteAll(){
-    const confirm = window.confirm("Você deseja apagar todos os itens?")
+    const confirm = window.confirm("Tem certeza que deseja apagar todos os itens?")
     if (confirm == true) {
       this.taskList = []
     }
