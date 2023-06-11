@@ -1,0 +1,26 @@
+@import '../../../../../dist/css/variaveis.css';
+
+
+div {
+    width: 80%;
+    background-color: var(--BgCorPrimaria);
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    top: -25px;
+}
+
+input{
+    font-size: 18px;
+    display: block;
+    border: none;
+    background-color: var(--BgCorPrimaria);
+    color:var(--text-color-secundaria);
+    margin: auto;
+    padding: 5px;
+    width:80%;
+}
+
+input::placeholder{
+    color: var(--text-color-secundaria);
+}

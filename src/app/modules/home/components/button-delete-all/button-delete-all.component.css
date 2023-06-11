@@ -1,0 +1,14 @@
+@import '../../../../../dist/css/variaveis.css';
+
+button{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--buttonColor);
+    padding: 13px 10px;
+    color: var(--text-color-secundaria);
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}

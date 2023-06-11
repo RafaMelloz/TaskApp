@@ -1,0 +1,15 @@
+<div>
+    <ul *ngIf="taskList.length">
+        <li *ngFor="let item of taskList; let i = index">
+            <input type="checkbox" [(ngModel)]="item.check">
+            <input type="text" (keyup)="validaInput(item.task, i)" [(ngModel)]="item.task" [ngClass]="{'checked':item.check}">
+
+            <button (click)="destroyItem(i)">
+                <img src="assets/icons/Vector.svg" alt="lixeira" >
+            </button>
+        </li>
+    </ul>
+</div>
+
+<app-input-add-itens (emitItemTask)="setEmit($event)"></app-input-add-itens>
+<app-button-delete-all *ngIf="taskList.length" (click)="deleteAll()"></app-button-delete-all>

@@ -1,0 +1,16 @@
+:root{
+    --BgCorPrimaria:#42cbf5;
+    --bgCorSecundaria:white;
+    --bgDarkCorSecundaria:#282929;
+
+    --bodyColor:#e6e6e6;
+    --bodyColorBlack:#131313;
+
+    --text-color-primaria:#939CBD;
+    --text-color-secundaria: var(--bgCorSecundaria);
+
+    --text-color-primaria-dark:#c0c1c5;
+    --text-color-secundaria-dark: var(--bgCorSecundaria);
+
+    --buttonColor:#e4150e;
+}

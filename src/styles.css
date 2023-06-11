@@ -1,0 +1,37 @@
+@import './dist/css/variaveis.css';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: var(--bodyColor);
+}
+
+.bodyLigth{
+    background-color: var(--bodyColor);
+}
+
+.bodyDark{
+    background-color: var(--bodyColorBlack);
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    min-width: 200px;
+    width: 30%;
+    margin: 70px auto;
+}
+
+input:focus {
+    outline: none;
+}
