@@ -5,9 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  public darkMode: boolean = true
-
-
-}
+export class HomeComponent {}
 

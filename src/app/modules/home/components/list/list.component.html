@@ -1,11 +1,14 @@
 <h1>App de Tasks</h1>
     
-    <div [ngClass]="{'boxDark':darkMode,'boxligth':!darkMode}">
+    <div ngClass="boxDark">
         <ul *ngIf="taskList.length">
             <li *ngFor="let item of taskList; let i = index">
-                <input type="checkbox" [(ngModel)]="item.check">
-                <input type="text" (keyup)="validaInput(item.task, i)" [(ngModel)]="item.task"
-                    [ngClass]="{'checked':item.check}">
+                <label class="group-inpt">
+                    <input  type="checkbox" class="ck-input" [(ngModel)]="item.check">
+                    <div class="checkmark"></div>
+                    <input type="text" (keyup)="validaInput(item.task, i)" [(ngModel)]="item.task" [ngClass]="{'checked':item.check}">
+                </label>
+                
     
                 <button (click)="destroyItem(i)">
                     <img src="assets/icons/Vector.svg" alt="lixeira">

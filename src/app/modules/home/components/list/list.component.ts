@@ -1,4 +1,4 @@
-import { Component, DoCheck, Input, OnInit } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { TaskList } from "../../model/task-list";
 
 @Component({
@@ -7,16 +7,12 @@ import { TaskList } from "../../model/task-list";
   styleUrls: ['./list.component.css']
 })
 export class ListComponent  implements DoCheck{
-  public darkMode:boolean = true
-
   public taskList: Array<TaskList> = JSON.parse(localStorage.getItem("list") || '[]');
 
   constructor(){}
 
   ngDoCheck() {
     this.setlocalStorage();
-    
-    
   }
 
   public setEmit(event: string){
