@@ -10,16 +10,22 @@
     font-weight: 400;
 }
 
-body{
-    background-color: var(--bodyColor);
+body,html{
+    width: 100%;
+    height: 100%;
 }
+
 
 .bodyLigth{
     background-color: var(--bodyColor);
+    height: 100%;
+    width: 100%;
 }
 
 .bodyDark{
     background-color: var(--bodyColorBlack);
+    height: 100%;
+    width: 100%;
 }
 
 ul{
@@ -29,7 +35,8 @@ ul{
 .container{
     min-width: 200px;
     width: 30%;
-    margin: 70px auto;
+    margin: 0px auto;
+    padding: 70px 0;
 }
 
 input:focus {

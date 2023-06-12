@@ -1,27 +1,80 @@
 @import '../../../../../dist/css/variaveis.css';
 
-div{
+h1 {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: var(--text-color-secundaria);
+    background-color: var(--BgCorPrimaria);
+    border-radius: 10px
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-delete {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--buttonColor);
+    padding: 13px 10px;
+    color: var(--text-color-secundaria);
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*modo-claro*/
+.boxligth{
+    border-radius: 10px;
     min-height: 300px;
     width: 100% ;
     background-color: var(--bgCorSecundaria);
     margin-top: 20px;
     box-shadow: 1px 1px 22px 2px rgba(125, 125, 125, 1);
     padding: 15px;
- 
 }
 
-div:not(:has(ul li)){
+.boxligth:not(:has(ul li)) {
     background-image: url(../../../../../assets/img/bg-task.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-li{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10px;
+
+
+
+/*modo-escuro*/
+
+
+
+
+
+.boxDark {
+    border-radius: 10px;
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--bgDarkCorSecundaria);
+    margin-top: 20px;
+    box-shadow: 1px 1px 22px 2px rgb(34 182 227);
+    padding: 15px;
 }
+
+.boxDark:not(:has(ul li)) {
+    background-image: url(../../../../../assets/img/bg-task.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
 
 input[type="text"]{
     width: 80%;
@@ -41,16 +94,18 @@ input[type="checkbox"]:checked ~ input[type="text"]{
     text-decoration: line-through;
 }
 
-button{
+div button{
     width: 5%;
     background-color: white;
     border: none;
     cursor: pointer;
 }
 
-button img{
+div button img{
     width: 13px;
 }
+
+
 
 
 

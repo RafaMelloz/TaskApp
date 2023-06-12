@@ -8,6 +8,7 @@ div {
     margin: auto;
     position: relative;
     top: -25px;
+    border-radius: 5px
 }
 
 input{
