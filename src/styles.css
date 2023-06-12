@@ -12,19 +12,13 @@
 
 body,html{
     width: 100%;
-    min-height: 100%;
-}
-
-
-.bodyLigth{
-    background-color: var(--bodyColor);
     height: 100%;
-    width: 100%;
 }
+
 
 .bodyDark{
     background-color: var(--bodyColorBlack);
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 }
 
