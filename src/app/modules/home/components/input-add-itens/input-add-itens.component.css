@@ -25,3 +25,23 @@ input{
 input::placeholder{
     color: var(--text-color-secundaria);
 }
+
+.btn-envio {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: var(--BgCorPrimaria);
+    padding: 13px 10px;
+    color: var(--text-color-secundaria);
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .btn-envio{
+        display: block;
+    }
+}
