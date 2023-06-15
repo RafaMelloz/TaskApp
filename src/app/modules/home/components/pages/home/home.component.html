@@ -1,5 +1,6 @@
-<div  Class="bodyDark">
+<div  [ngClass]="{'bodyDark':darkMode, 'bodyLight':!darkMode}">
     <section class="container">
+        <app-btn-troca-modo></app-btn-troca-modo>
         <app-list></app-list>
     </section>
 </div>

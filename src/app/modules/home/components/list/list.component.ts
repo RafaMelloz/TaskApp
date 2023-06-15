@@ -1,18 +1,24 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import { TaskList } from "../../model/task-list";
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent  implements DoCheck{
+export class ListComponent  implements DoCheck,OnInit{
   public taskList: Array<TaskList> = JSON.parse(localStorage.getItem("list") || '[]');
+  public darkMode : boolean = true;
+  constructor(private darkModeService: DarkModeService){}
 
-  constructor(){}
+  ngOnInit(): void {
+    this.darkMode = this.darkModeService.darkMode;
+  }
 
   ngDoCheck() {
     this.setlocalStorage();
+    this.darkMode = this.darkModeService.darkMode;
   }
 
   public setEmit(event: string){

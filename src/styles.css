@@ -27,6 +27,12 @@ body,html{
     width: 100%;
 }
 
+.bodyLight{
+    background-color: rgb(240, 240, 240);
+    min-height: 100%;
+    width: 100%;
+}
+
 ul{
     list-style: none;
 }

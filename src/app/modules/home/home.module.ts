@@ -8,6 +8,7 @@ import { ListComponent } from './components/list/list.component';
 
 //Page
 import { HomeComponent } from './components/pages/home/home.component';
+import { BtnTrocaModoComponent } from './components/btn-troca-modo/btn-troca-modo.component';
 
 
 
@@ -16,7 +17,8 @@ import { HomeComponent } from './components/pages/home/home.component';
   declarations: [
     InputAddItensComponent,
     ListComponent,
-    HomeComponent
+    HomeComponent,
+    BtnTrocaModoComponent
   ],
   imports: [
     CommonModule,
