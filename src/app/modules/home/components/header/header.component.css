@@ -1,0 +1,10 @@
+@import '../../../../../dist/css/variaveis.css';
+
+h1{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color:var(--text-color-secundaria);
+    background-color: var(--BgCorPrimaria);
+    
+}
