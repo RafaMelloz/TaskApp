@@ -1,6 +1,6 @@
 <h1>App de Tasks</h1>
     
-    <div [ngClass]="{'boxDark':darkMode, 'boxLight':!darkMode}">
+    <div [ngClass]="{'boxDark':darkMode, 'boxLight':!darkMode, 'iconBox': taskList.length == 0}">
         <ul *ngIf="taskList.length">
             <li *ngFor="let item of taskList; let i = index">
                 <label class="group-inpt">

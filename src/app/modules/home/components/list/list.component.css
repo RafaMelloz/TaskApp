@@ -49,17 +49,17 @@ li {
     padding: 15px;
 }
 
-.boxLight:not(:has(ul li)) {
+.iconBox{
     background-image: url(../../../../../assets/img/bg-task.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.boxDark:not(:has(ul li)) {
+/* .boxDark:not(:has(ul li)) {
     background-image: url(../../../../../assets/img/bg-task.png);
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 input[type="text"]{
     width: 80%;
